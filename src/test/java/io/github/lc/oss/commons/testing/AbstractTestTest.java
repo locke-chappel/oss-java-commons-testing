@@ -1,4 +1,4 @@
-package com.github.lc.oss.commons.testing;
+package io.github.lc.oss.commons.testing;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -191,7 +191,7 @@ public class AbstractTestTest extends AbstractTest {
             Assertions.fail("Expected exception");
         } catch (RuntimeException ex) {
             Assertions.assertTrue(ex.getCause() instanceof IllegalArgumentException);
-            Assertions.assertEquals("object is not an instance of com.github.lc.oss.commons.testing.AbstractTestTest$TestDerived", ex.getCause().getMessage());
+            Assertions.assertEquals("object is not an instance of io.github.lc.oss.commons.testing.AbstractTestTest$TestDerived", ex.getCause().getMessage());
         }
     }
 
@@ -205,7 +205,7 @@ public class AbstractTestTest extends AbstractTest {
             Assertions.fail("Expected exception");
         } catch (RuntimeException ex) {
             Assertions.assertTrue(ex.getCause() instanceof IllegalArgumentException);
-            Assertions.assertEquals("object is not an instance of com.github.lc.oss.commons.testing.AbstractTestTest$TestDerived", ex.getCause().getMessage());
+            Assertions.assertEquals("object is not an instance of io.github.lc.oss.commons.testing.AbstractTestTest$TestDerived", ex.getCause().getMessage());
         }
     }
 

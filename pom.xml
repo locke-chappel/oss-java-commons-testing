@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.github.locke-chappel.oss.commons</groupId>
+        <groupId>io.github.locke-chappel.oss.commons</groupId>
         <artifactId>parent</artifactId>
         <version>1.0.0</version>
     </parent>
@@ -69,7 +69,7 @@
                         --add-opens org.junit.platform.commons/org.junit.platform.commons.util=ALL-UNNAMED
                         --add-opens org.junit.platform.commons/org.junit.platform.commons.util.Preconditions=ALL-UNNAMED
                         --add-opens org.junit.platform.commons/org.junit.platform.commons.logging=ALL-UNNAMED
-                        --add-opens com.github.lc.oss.commons.testing/com.github.lc.oss.commons.testing=org.mockito
+                        --add-opens io.github.lc.oss.commons.testing/io.github.lc.oss.commons.testing=org.mockito
                         ${JacocoArgs}
                     </argLine>
                 </configuration>

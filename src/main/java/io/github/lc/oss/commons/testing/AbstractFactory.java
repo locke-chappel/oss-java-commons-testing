@@ -1,16 +1,12 @@
-package com.github.lc.oss.commons.testing;
+package io.github.lc.oss.commons.testing;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.function.Supplier;
 
-public abstract class AbstractTest {
+public abstract class AbstractFactory {
     protected <T> T getField(String fieldName, Object instance) {
         return TestUtil.getField(fieldName, instance);
-    }
-
-    protected <T> T getField(String fieldName, Class<?> clazz) {
-        return TestUtil.getField(fieldName, clazz);
     }
 
     protected <T> T getField(Field field, Object instance) {
@@ -19,10 +15,6 @@ public abstract class AbstractTest {
 
     protected void setField(String fieldName, Object value, Object instance) {
         TestUtil.setField(fieldName, value, instance);
-    }
-
-    protected void setField(String fieldName, Object value, Class<?> clazz) {
-        TestUtil.setField(fieldName, value, clazz);
     }
 
     protected void setField(Field field, Object value, Object instance) {

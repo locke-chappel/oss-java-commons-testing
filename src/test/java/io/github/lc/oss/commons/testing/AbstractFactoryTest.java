@@ -1,4 +1,4 @@
-package com.github.lc.oss.commons.testing;
+package io.github.lc.oss.commons.testing;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
